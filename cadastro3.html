@@ -64,61 +64,62 @@
       <div class="col col-12 mt-5">
         <h1>Crie sua conta</h1>
         <ol class="d-flex ml-0 pl-3 pb-3 mt-5 mb-4 border-bottom">
-          <li class="mr-5 font-weight-bold text-primary">Cadastro</li>
-          <li class="mr-5 text-muted">Atendimento</li>
-          <li class="mr-5 text-muted">Interesses</li>
+          <li class="mr-5">Cadastro</li>
+          <li class="mr-5">Atendimento</li>
+          <li class="mr-5 font-weight-bold text-primary">Interesses</li>
         </ol>
         <form>
           <div class="row">
-            <div class="col col-12 col-md-6">
-              <div class="form-group">
-                <label for="nome" class="bmd-label-floating">Nome completo</label>
-                <input type="text" class="form-control" id="nome" placeholder="Nome completo">
-              </div>
-            </div>
-            <div class="col col-12 col-md-6">
-              <div class="form-group">
-                <label for="email" class="bmd-label-floating">E-mail</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailajuda" placeholder="E-mail">
-                <small id="emailajuda" class="form-text text-muted">Deve ser um email válido</small>
-              </div>
-            </div>
-            <div class="col col-12 col-md-6">
-              <div class="form-group">
-                <label for="senha" class="bmd-label-floating">Senha</label>
-                <input type="password" class="form-control" id="senha" aria-describedby="senhaajuda"
-                  placeholder="Senha">
-                <div role="button" class="btn absolute">
-                  <i class="material-icons absolute">visibility</i>
-                  <span class="sr-only">Visualizar</span>
-                </div>
+            <div class="col col-12">
+              <form>
+                <fieldset class="row">
+                  <legend class="col-12 col-form-label mb-3">Marque seus tópicos de interesse para receber e-mails de
+                    resumo
+                    sobre o que está sendo discutido na nossa comunidade:</legend>
+                  <div class="form-check pl-5 pb-4 col-12 col-md-6 col-lg-4">
+                    <input class="form-check-input" type="checkbox" name="atendimentoOptions" id="psi" value="psi">
+                    <label class="form-check-label" for="psi">Psicologia</label>
+                  </div>
+                  <div class="form-check pl-5 pb-4 col-12 col-md-6 col-lg-4">
+                    <input class="form-check-input" type="checkbox" name="atendimentoOptions" id="fis" value="fis">
+                    <label class="form-check-label" for="fis">Psicologia</label>
+                  </div>
+                  <div class="form-check pl-5 pb-4 col-12 col-md-6 col-lg-4">
+                    <input class="form-check-input" type="checkbox" name="atendimentoOptions" id="cli" value="cli">
+                    <label class="form-check-label" for="cli">Psicologia</label>
+                  </div>
+                  <div class="form-check pl-5 pb-4 col-12 col-md-6 col-lg-4">
+                    <input class="form-check-input" type="checkbox" name="atendimentoOptions" id="psi" value="psi">
+                    <label class="form-check-label" for="psi">Psicologia</label>
+                  </div>
+                  <div class="form-check pl-5 pb-4 col-12 col-md-6 col-lg-4">
+                    <input class="form-check-input" type="checkbox" name="atendimentoOptions" id="fis" value="fis">
+                    <label class="form-check-label" for="fis">Psicologia</label>
+                  </div>
+                  <div class="form-check pl-5 pb-4 col-12 col-md-6 col-lg-4">
+                    <input class="form-check-input" type="checkbox" name="atendimentoOptions" id="cli" value="cli">
+                    <label class="form-check-label" for="cli">Psicologia</label>
+                  </div>
+                  <div class="form-check pl-5 pb-4 col-12 col-md-6 col-lg-4">
+                    <input class="form-check-input" type="checkbox" name="atendimentoOptions" id="psi" value="psi">
+                    <label class="form-check-label" for="psi">Psicologia</label>
+                  </div>
+                  <div class="form-check pl-5 pb-4 col-12 col-md-6 col-lg-4">
+                    <input class="form-check-input" type="checkbox" name="atendimentoOptions" id="fis" value="fis">
+                    <label class="form-check-label" for="fis">Psicologia</label>
+                  </div>
+                  <div class="form-check pl-5 pb-4 col-12 col-md-6 col-lg-4">
+                    <input class="form-check-input" type="checkbox" name="atendimentoOptions" id="cli" value="cli">
+                    <label class="form-check-label" for="cli">Psicologia</label>
+                  </div>
 
-                <small id="senhaajuda" class="form-text text-muted">Mínimo 8 caracteres, incluindo pelo menos um
-                  número</small>
-              </div>
-            </div>
-            <div class="col col-12 col-md-6">
-              <div class="form-group">
-                <label for="senha2" class="bmd-label-floating">Confirmar senha</label>
-                <input type="password" class="form-control" id="senha2" placeholder="Confirmar senha">
-                <div role="button" class="btn absolute">
-                  <i class="material-icons absolute">visibility</i>
-                  <span class="sr-only">Visualizar</span>
-                </div>
-              </div>
+                </fieldset>
+              </form>
+
             </div>
 
             <div class="col col-12 mt-5">
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Li e concordo com os <a href="#">Termos e
-                    Condições</a>
-                  e a <a href="#">Política de Privacidade</a></label>
-              </div>
-            </div>
-
-            <div class="col col-12 mt-5">
-              <button type="submit" class="btn btn-primary active">Próximo</button>
+              <button type="submit" class="btn btn-primary active">Completar cadastro</button>
             </div>
 
           </div>

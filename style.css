@@ -36,3 +36,17 @@ body {
 .breadcrumb {
   background-color: #fafafa;
 }
+
+.text-primary {
+  color: #6202EE !important;
+}
+
+.bmd-btn-fab.custom-file-control::before, .btn.bmd-btn-fab {
+	width: 2rem;
+	min-width: 2rem;
+	height: 2rem;
+}
+
+.bmd-btn-fab.custom-file-control::before, .bmd-btn-icon.custom-file-control::before, .btn.bmd-btn-fab, .btn.bmd-btn-icon {
+	font-size: 1rem;
+}
