@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>além do covid</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="d-flex flex-column justify-content-between">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="image.svg" alt="além do covid" style="width: 7.5em;" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Atendimento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Comunidade</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre nós</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Acessibilidade
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">[fonte]</a>
+                            <a class="dropdown-item" href="#">Libras</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary d-flex align-items-center">
+                            <i class="material-icons mr-2">account_circle
+                            </i>
+                            Entrar</button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="container mt-5 pt-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                <li class="breadcrumb-item"><a href="#">Atendimento</a></li>
+            </ol>
+        </nav>
+        <br />
+        <div class="row d-flex">
+            <div class="atendimento-title col col-12 align-self-center">
+                <h1>Atendimento</h1>
+                <h5>Bem-vindo João Henrique <a href="#" class="btn btn-primary">EDITAR PERFIL</a></h5>
+                <br />
+            </div>
+            <div class="col-12 align-self-center">
+                <h5>Atendimentos marcados</h5>
+                <div class="row d-flex">
+                    <div class="col-6">
+                        Dra. Aline Vargas <a href="#" class="btn btn-primary"> Psicológico</a>
+                    </div>
+                    <div class="col-6 float-right align-self-center">
+                        10 de outubro de 2020, 17:00
+                    </div>
+                </div>
+                <hr>
+                <div class="row d-flex ">
+                    <div class="col-6">
+                        Dr. Felipe Andrade <a href="#" class="btn btn-primary"> Fisioterápico</a>
+                    </div>
+                    <div class="col-6 float-right align-self-center">
+                        10 de outubro de 2020, 17:00
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col col-12 mt-4">
+            <button type="submit" class="btn btn-primary active">Novo Atendimento</button>
+        </div>
+    </main>
+
+    <footer class="bg-white border-top pt-4 mt-5">
+        <div class="container d-flex justify-content-between">
+            <p>(21) 12345-6789 <br />
+                contato@alemdocovid.org</p>
+            <a href="#">Política de privacidade</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+        crossorigin="anonymous"></script>
+    <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
+</body>
+
+</html>
