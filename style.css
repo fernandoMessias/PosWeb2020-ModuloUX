@@ -15,7 +15,7 @@
   color: #fff !important;
 }
 
-.badge {
+.badge-primary {
   color: #7C1EFB;
   background-color: #E8DCF9 !important;
 }
@@ -65,10 +65,6 @@ footer {
 }
 
 
-.nav-breadcrumb{
-  background-color: #fafafa !important;
-}
-
 .btn-secondary{ 
   background-color: rgba(0, 0, 0, 0.06) !important;
   font-weight: normal;
@@ -96,4 +92,17 @@ footer {
 
 .box-time-parent:hover {
   background-color: rgba(242, 231, 254, 1);
+}
+
+h1 {
+ font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: bold;
 }
