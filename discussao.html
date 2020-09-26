@@ -185,6 +185,23 @@
     crossorigin="anonymous"></script>
   <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
   <script src="utils.js"></script>
+  <script>
+    $(function () {
+
+      $('.dropdown-toggle').on('click', function (event) {
+        $('.dropdown-menu').slideToggle();
+        event.stopPropagation();
+      });
+
+      $('.dropdown-menu').on('click', function (event) {
+        event.stopPropagation();
+      });
+
+      $(window).on('click', function () {
+        $('.dropdown-menu').slideUp();
+      });
+    });
+  </script>
 </body>
 
 </html>
