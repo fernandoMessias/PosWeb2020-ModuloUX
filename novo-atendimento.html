@@ -17,7 +17,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img src="image.svg" alt="além do covid" style="width: 7.5em;" />
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -63,33 +63,103 @@
   </nav>
 
   <main class="container mt-5 pt-5">
-
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb nav-breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="#">Atendimento</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Agendar novo</li>
+        </ol>
+    </nav>    
     <div class="row d-flex">
       <div class="col col-12 col-md-6 align-self-center">
-        <h1>
-          <img src="image.svg" alt="além do covid" style="width: 15rem;" />
-        </h1>
+        <h2>
+          Agendar novo atendimento
+        </h2>
 
-        <p>
-          Sabemos como é difícil se adaptar à vida após o COVID-19. Mesmo após a cura, há um longo processo de
-          recuperação física e psicológica.
+        <p  class="mt-4">
+          Qual tipo de atendimento você está buscando?
         </p>
-        <p>
-          Receba atendimento online gratuito de profissionais voluntários no seu momento pós-COVID, ou interaja com
-          outros como você na nossa comunidade virtual.
-        </p>
+        
         <div class="mt-4">
-          <button class="btn btn-primary active">Sou paciente</button>
-          <button class="btn btn-primary">Sou voluntário</button>
-        </div>
-      </div>
-      <div class="col col-12 col-md-6">
-        <img src="illust.svg"
-          alt="Ilustração de um homem usando o computador à esquerda, e uma mulher usando um smartphone à direita"
-          style="width: 100%;" />
-      </div>
+          <button class="btn btn-secondary mr-2">Psicológico</button>
+          <button class="btn btn-secondary active mr-2">Fitoterápico</button>
+          <button class="btn btn-secondary active mr-2">Clínico Geral</button>
+          <button class="btn btn-secondary mr-2">Outros</button>
+        </div>        
+      </div>     
     </div>
 
+    <div class="row d-flex mt-5">
+        <div class="col col-12 col-md-5 align-self-center">
+            erere
+        </div>
+        <div class="col col-12 col-md-3">            
+            <div class="input-group border-bottom">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                  <input type="radio" name="test" aria-label="Radio button for following text input">
+                  </div>
+                </div>
+                <div class="ml-2 mb-2"> 
+                    <p class="mb-0">Dr. Mário Lopez</p>                    
+                    <small class="text-muted" >Clínico Geral</small>                   
+                </div>
+            </div>
+            <div class="input-group border-bottom mt-3">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                  <input type="radio" name="test" aria-label="Radio button for following text input">
+                  </div>
+                </div>
+                <div class="ml-2 mb-2"> 
+                    <p class="mb-0">Dra. Sandra Ramos</p>
+                    <small class="text-muted" >Fisioterapeuta</small>                   
+                </div>
+            </div>
+            <div class="input-group border-bottom mt-3">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                  <input type="radio" name="test" aria-label="Radio button for following text input">
+                  </div>
+                </div>
+                <div class="ml-2 mb-2"> 
+                    <p class="mb-0">Dr. Pedro Andrade</p>
+                    <small class="text-muted" >Fisioterapeuta</small>                   
+                </div>
+            </div>
+        </div>
+        <div class="col col-12 col-md-4"> 
+            <h5 class="text-center">Horários disponíveis</h5>
+            <div class="d-flex justify-content-around mt-2">
+                <div class="box-time">  
+                    <span class="text-muted">7:00</span>
+                </div>                
+                <p class="text-muted mt-3">Às</p>                
+                <div class="box-time">  
+                    <span class="text-muted">7:30</span>
+                </div>    
+            </div>
+            <div class="d-flex justify-content-around mt-2">
+                <div class="box-time">  
+                    <span class="text-muted">9:00</span>
+                </div>
+                <p class="text-muted mt-3">Às</p>
+                <div class="box-time">  
+                    <span class="text-muted">9:30</span>
+                </div>    
+            </div>
+            <div class="d-flex justify-content-around mt-2">
+                <div class="box-time">  
+                    <span class="text-muted">16:30</span>
+                </div>
+                <p class="text-muted mt-3">Às</p>
+                <div class="box-time">  
+                    <span class="text-muted">17:00</span>
+                </div>    
+            </div>
+
+        </div>
+    </div>
     <hr class="mt-5 mb-5" />
 
     <div class="row">
@@ -102,13 +172,10 @@
         <div class="card">
           <div class="card-body">
             <h5 class="card-title d-flex align-items-center"><i class="material-icons mr-2">forum
-              </i> <a href="forumtopics.html">Psicologia</a></h5>
+              </i> Psicologia</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            <div class="d-flex justify-content-between">
-              <small class="text-muted">10 tópicos</small>
-              <small class="text-muted">40 respostas</small>
-            </div>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
       </div>
@@ -117,13 +184,10 @@
         <div class="card">
           <div class="card-body">
             <h5 class="card-title d-flex align-items-center"><i class="material-icons mr-2">forum
-              </i> <a href="forumtopics.html">Psicologia</a></h5>
+              </i> Psicologia</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            <div class="d-flex justify-content-between">
-              <small class="text-muted">10 tópicos</small>
-              <small class="text-muted">40 respostas</small>
-            </div>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
       </div>
@@ -132,13 +196,10 @@
         <div class="card">
           <div class="card-body">
             <h5 class="card-title d-flex align-items-center"><i class="material-icons mr-2">forum
-              </i> <a href="forumtopics.html">Psicologia</a></h5>
+              </i> Psicologia</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            <div class="d-flex justify-content-between">
-              <small class="text-muted">10 tópicos</small>
-              <small class="text-muted">40 respostas</small>
-            </div>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
       </div>
@@ -147,13 +208,10 @@
         <div class="card">
           <div class="card-body">
             <h5 class="card-title d-flex align-items-center"><i class="material-icons mr-2">forum
-              </i> <a href="forumtopics.html">Psicologia</a></h5>
+              </i> Psicologia</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            <div class="d-flex justify-content-between">
-              <small class="text-muted">10 tópicos</small>
-              <small class="text-muted">40 respostas</small>
-            </div>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
       </div>
