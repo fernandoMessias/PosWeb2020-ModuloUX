@@ -2,6 +2,8 @@
   flex-grow: 0;
 }
 
+
+
 .btn {
   border-radius: 1.5em;
 }
@@ -108,4 +110,8 @@ h3 {
 
 input::placeholder {
   text-indent: -1000000px;
+}
+
+a:focus, button:focus {
+  outline: 5px solid blue !important;
 }
