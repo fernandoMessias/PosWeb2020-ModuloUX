@@ -55,3 +55,27 @@ body {
 .form-check-label {
   font-size: 0.9em;
 }
+
+
+.nav-breadcrumb{
+  background-color: #fafafa !important;
+}
+
+.btn-secondary{ 
+  background-color: rgba(0, 0, 0, 0.06) !important;
+  font-weight: normal;
+  color: black !important;
+}
+
+.btn-secondary.active {
+  background-color: lightgray !important;
+  color:  #7F22FD !important;  
+}
+
+.box-time{
+  border-radius: 0.5em;
+  border: 1px solid rgba(78, 73, 87, 1) ;
+  width: 5em;
+  text-align: center;
+  align-self: center;
+}
