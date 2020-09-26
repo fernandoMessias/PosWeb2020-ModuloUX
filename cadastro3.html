@@ -123,7 +123,7 @@
             </div>
 
             <div class="col col-12 mt-5">
-              <button type="submit" class="btn btn-primary active">Completar cadastro</button>
+              <button id="cadastro3" type="submit" class="btn btn-primary active">Completar cadastro</button>
             </div>
 
           </div>
@@ -152,7 +152,19 @@
   <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
     integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
     crossorigin="anonymous"></script>
-  <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
+  <script>
+
+    $(document).ready(function () {
+      $('body').bootstrapMaterialDesign();
+      $("#cadastro3").click(function (e) {
+        e.preventDefault();
+        console.log("teste")
+        window.location = "atendimento.html";
+      });
+
+    });
+
+  </script>
   <script src="utils.js"></script>
 </body>
 
