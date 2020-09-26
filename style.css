@@ -15,6 +15,11 @@
   color: #fff !important;
 }
 
+.badge {
+  color: #7C1EFB;
+  background-color: #E8DCF9 !important;
+}
+
 a, a:hover {
   color: #6202EE;
 }
