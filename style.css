@@ -18,3 +18,17 @@
 a, a:hover {
   color: #6202EE;
 }
+
+.absolute {
+  position: absolute;
+  margin-top: -1.1em;
+  right: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+body {
+  height: 100vh;
+}
