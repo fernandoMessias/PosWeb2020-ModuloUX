@@ -162,6 +162,17 @@
     integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
     crossorigin="anonymous"></script>
   <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
+  <script>
+    function plusFont(){
+      $('body').css('font-size', (parseInt($('body').css('font-size')) + 2).toString()+'px');
+      $('html').css('font-size', (parseInt($('html').css('font-size')) + 2).toString()+'px');
+    }
+
+    function minusFont(){
+      $('body').css('font-size', (parseInt($('body').css('font-size')) - 2).toString()+'px');
+      $('html').css('font-size', (parseInt($('html').css('font-size')) - 2).toString()+'px');
+    }
+  </script>
 </body>
 
 </html>
