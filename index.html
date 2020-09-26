@@ -31,7 +31,7 @@
             <a class="nav-link" href="#">Atendimento</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Comunidade</a>
+            <a class="nav-link" href="comunidade.html">Comunidade</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Sobre nós</a>
@@ -43,9 +43,9 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <div class="dropdown-item" href="#">
-                <button class="btn bmd-btn-fab bg-white" aria-label="Diminuir fonte">-</button>
+                <button class="btn bmd-btn-fab bg-white" aria-label="Diminuir fonte" onclick="minusFont()">-</button>
                 <span aria-hidden="true" class="mr-2 ml-2">A<small>A</small></span>
-                <button class="btn bmd-btn-fab bg-white" aria-label="Aumentar fonte">+</button>
+                <button class="btn bmd-btn-fab bg-white" aria-label="Aumentar fonte" onclick="plusFont()">+</button>
               </div>
               <a class="dropdown-item" href="#">Libras</a>
             </div>
@@ -166,17 +166,7 @@
     integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
     crossorigin="anonymous"></script>
   <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
-  <script>
-    function plusFont(){
-      $('body').css('font-size', (parseInt($('body').css('font-size')) + 2).toString()+'px');
-      $('html').css('font-size', (parseInt($('html').css('font-size')) + 2).toString()+'px');
-    }
-
-    function minusFont(){
-      $('body').css('font-size', (parseInt($('body').css('font-size')) - 2).toString()+'px');
-      $('html').css('font-size', (parseInt($('html').css('font-size')) - 2).toString()+'px');
-    }
-  </script>
+  <script src="utils.js"></script>
 </body>
 
 </html>
