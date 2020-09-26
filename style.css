@@ -105,3 +105,7 @@ h2 {
 h3 {
   font-size: 1.25em;
 }
+
+input::placeholder {
+  text-indent: -1000000px;
+}
