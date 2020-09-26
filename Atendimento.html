@@ -17,44 +17,47 @@
 <body class="d-flex flex-column justify-content-between">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="image.svg" alt="além do covid" style="width: 7.5em;" />
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="Atendimento.html">Atendimento</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="comunidade.html">Comunidade</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre nós</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Acessibilidade
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">[fonte]</a>
-                            <a class="dropdown-item" href="#">Libras</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-primary d-flex align-items-center">
-                            <i class="material-icons mr-2">account_circle
-                            </i>
-                            Entrar</button>
-                    </li>
-                </ul>
-            </div>
-
+          <a class="navbar-brand" href="index.html">
+            <img src="image.svg" alt="além do covid" style="width: 7.5em;" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="Atendimento.html">Atendimento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comunidade.html">Comunidade</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre nós</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Acessibilidade
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <div class="dropdown-item" href="#">
+                    <button class="btn bmd-btn-fab bg-white" aria-label="Diminuir fonte" onclick="minusFont()">-</button>
+                    <span aria-hidden="true" class="mr-2 ml-2">A<small>A</small></span>
+                    <button class="btn bmd-btn-fab bg-white" aria-label="Aumentar fonte" onclick="plusFont()">+</button>
+                  </div>
+                  <a class="dropdown-item" href="#">Libras</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-primary d-flex align-items-center">
+                  <i class="material-icons mr-2">account_circle
+                  </i>
+                  Entrar</button>
+              </li>
+            </ul>
+          </div>
         </div>
     </nav>
 
@@ -76,7 +79,7 @@
                 <h5>Atendimentos marcados</h5>
                 <div class="row d-flex">
                     <div class="col-6">
-                        Dra. Aline Vargas <a href="#" class="btn btn-primary"> Psicológico</a>
+                        Dra. Aline Vargas <a href="#" class="badge badge-pill badge-primary"> Psicológico</a>
                     </div>
                     <div class="col-6 float-right align-self-center">
                         10 de outubro de 2020, 17:00
@@ -85,7 +88,7 @@
                 <hr>
                 <div class="row d-flex ">
                     <div class="col-6">
-                        Dr. Felipe Andrade <a href="#" class="btn btn-primary"> Fisioterápico</a>
+                        Dr. Felipe Andrade <a href="#" class="badge badge-pill badge-primary"> Fisioterápico</a>
                     </div>
                     <div class="col-6 float-right align-self-center">
                         10 de outubro de 2020, 17:00
@@ -94,7 +97,7 @@
             </div>
         </div>
         <div class="col col-12 mt-4">
-            <a type="submit" class="btn btn-primary active" href="cadastro1.html"> Novo Atendimento</a>
+            <a type="submit" class="btn btn-primary active" href="novo-atendimento.html"> Novo Atendimento</a>
         </div>
     </main>
 
@@ -116,6 +119,7 @@
         integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
         crossorigin="anonymous"></script>
     <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
+    <script src="utils.js"></script>
 </body>
 
 </html>

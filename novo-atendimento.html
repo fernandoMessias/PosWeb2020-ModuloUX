@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>além do covid</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+    integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="image.svg" alt="além do covid" style="width: 7.5em;" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Atendimento.html">Atendimento</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comunidade.html">Comunidade</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre nós</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Acessibilidade
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-item" href="#">
+                <button class="btn bmd-btn-fab bg-white" aria-label="Diminuir fonte" onclick="minusFont()">-</button>
+                <span aria-hidden="true" class="mr-2 ml-2">A<small>A</small></span>
+                <button class="btn bmd-btn-fab bg-white" aria-label="Aumentar fonte" onclick="plusFont()">+</button>
+              </div>
+              <a class="dropdown-item" href="#">Libras</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-primary d-flex align-items-center">
+              <i class="material-icons mr-2">account_circle
+              </i>
+              Entrar</button>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <main class="container mt-5 pt-5">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb nav-breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="#">Atendimento</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Agendar novo</li>
+        </ol>
+    </nav>    
+    <div class="row d-flex">
+      <div class="col col-12 col-md-6 align-self-center">
+        <h2>
+          Agendar novo atendimento
+        </h2>
+
+        <p  class="mt-4">
+          Qual tipo de atendimento você está buscando?
+        </p>
+        
+        <div class="mt-4">
+          <button class="btn btn-secondary mr-2">Psicológico</button>
+          <button class="btn btn-secondary active mr-2">Fitoterápico</button>
+          <button class="btn btn-secondary active mr-2">Clínico Geral</button>
+          <button class="btn btn-secondary mr-2">Outros</button>
+        </div>        
+      </div>     
+    </div>
+
+    <div class="row d-flex mt-5">
+        <div class="col col-12 col-md-5 align-self-center">
+            erere
+        </div>
+        <div class="col col-12 col-md-3">            
+            <div class="input-group border-bottom">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                  <input type="radio" name="test" aria-label="Radio button for following text input">
+                  </div>
+                </div>
+                <div class="ml-2 mb-2"> 
+                    <p class="mb-0">Dr. Mário Lopez</p>                    
+                    <small class="text-muted" >Clínico Geral</small>                   
+                </div>
+            </div>
+            <div class="input-group border-bottom mt-3">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                  <input type="radio" name="test" aria-label="Radio button for following text input">
+                  </div>
+                </div>
+                <div class="ml-2 mb-2"> 
+                    <p class="mb-0">Dra. Sandra Ramos</p>
+                    <small class="text-muted" >Fisioterapeuta</small>                   
+                </div>
+            </div>
+            <div class="input-group border-bottom mt-3">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                  <input type="radio" name="test" aria-label="Radio button for following text input">
+                  </div>
+                </div>
+                <div class="ml-2 mb-2"> 
+                    <p class="mb-0">Dr. Pedro Andrade</p>
+                    <small class="text-muted" >Fisioterapeuta</small>                   
+                </div>
+            </div>
+        </div>
+        <div class="col col-12 col-md-4"> 
+            <h5 class="text-center">Horários disponíveis</h5>
+            <div class="d-flex justify-content-around mt-2">
+                <div class="box-time">  
+                    <span class="text-muted">7:00</span>
+                </div>                
+                <p class="text-muted mt-3">Às</p>                
+                <div class="box-time">  
+                    <span class="text-muted">7:30</span>
+                </div>    
+            </div>
+            <div class="d-flex justify-content-around mt-2">
+                <div class="box-time">  
+                    <span class="text-muted">9:00</span>
+                </div>
+                <p class="text-muted mt-3">Às</p>
+                <div class="box-time">  
+                    <span class="text-muted">9:30</span>
+                </div>    
+            </div>
+            <div class="d-flex justify-content-around mt-2">
+                <div class="box-time">  
+                    <span class="text-muted">16:30</span>
+                </div>
+                <p class="text-muted mt-3">Às</p>
+                <div class="box-time">  
+                    <span class="text-muted">17:00</span>
+                </div>    
+            </div>
+
+        </div>
+    </div>
+    <hr class="mt-5 mb-5" />
+
+    <div class="row">
+      <div class="col col-12">
+        <h4>Comunidade</h4>
+        <p>Veja o que nossa comunidade tem discutido em uma série de temas</p>
+      </div>
+
+      <div class="col col-12 col-md-6 col-lg-3 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title d-flex align-items-center"><i class="material-icons mr-2">forum
+              </i> Psicologia</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col-12 col-md-6 col-lg-3 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title d-flex align-items-center"><i class="material-icons mr-2">forum
+              </i> Psicologia</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col-12 col-md-6 col-lg-3 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title d-flex align-items-center"><i class="material-icons mr-2">forum
+              </i> Psicologia</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col-12 col-md-6 col-lg-3 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title d-flex align-items-center"><i class="material-icons mr-2">forum
+              </i> Psicologia</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-white border-top pt-4 mt-5">
+    <div class="container d-flex justify-content-between">
+      <p>(21) 12345-6789 <br />
+        contato@alemdocovid.org</p>
+      <a href="#">Política de privacidade</a>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+    integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+    integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+    crossorigin="anonymous"></script>
+  <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
+  <script src="utils.js"></script>
+</body>
+
+</html>
