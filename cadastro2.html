@@ -64,57 +64,40 @@
       <div class="col col-12 mt-5">
         <h1>Crie sua conta</h1>
         <ol class="d-flex ml-0 pl-3 pb-3 mt-5 mb-4 border-bottom">
-          <li class="mr-5 font-weight-bold text-primary">Cadastro</li>
-          <li class="mr-5 text-muted">Atendimento</li>
-          <li class="mr-5 text-muted">Interesses</li>
+          <li class="mr-5">Cadastro</li>
+          <li class="mr-5 font-weight-bold text-primary">Atendimento</li>
+          <li class="mr-5">Interesses</li>
         </ol>
         <form>
           <div class="row">
-            <div class="col col-12 col-md-6">
-              <div class="form-group">
-                <label for="nome" class="bmd-label-floating">Nome completo</label>
-                <input type="text" class="form-control" id="nome" placeholder="Nome completo">
-              </div>
-            </div>
-            <div class="col col-12 col-md-6">
-              <div class="form-group">
-                <label for="email" class="bmd-label-floating">E-mail</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailajuda" placeholder="E-mail">
-                <small id="emailajuda" class="form-text text-muted">Deve ser um email válido</small>
-              </div>
-            </div>
-            <div class="col col-12 col-md-6">
-              <div class="form-group">
-                <label for="senha" class="bmd-label-floating">Senha</label>
-                <input type="password" class="form-control" id="senha" aria-describedby="senhaajuda"
-                  placeholder="Senha">
-                <div role="button" class="btn absolute">
-                  <i class="material-icons absolute">visibility</i>
-                  <span class="sr-only">Visualizar</span>
-                </div>
+            <div class="col col-12">
+              <form>
+                <fieldset>
+                  <legend class="col-form-label mb-3">Em que tipos de atendimento você tem interesse?</legend>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="atendimentoOptions" id="psi" value="psi">
+                    <label class="form-check-label" for="psi">Psicológico</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="atendimentoOptions" id="fis" value="fis">
+                    <label class="form-check-label" for="fis">Fisioterápico</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="atendimentoOptions" id="cli" value="cli">
+                    <label class="form-check-label" for="cli">Clínico geral </label>
+                  </div>
+                  <br />
+                  <div class="form-check form-check-inline mt-2">
+                    <input class="form-check-input" type="checkbox" name="atendimentoOptions" id="outro" value="outro">
+                    <label class="form-check-label" for="outro">Outro: </label>
+                    <div class="form-group form-check-inline ml-3">
+                      <label for="atend" class="bmd-label-floating">Especifique aqui</label>
+                      <input type="text" class="form-control" id="atend" placeholder="Especifique aqui">
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
 
-                <small id="senhaajuda" class="form-text text-muted">Mínimo 8 caracteres, incluindo pelo menos um
-                  número</small>
-              </div>
-            </div>
-            <div class="col col-12 col-md-6">
-              <div class="form-group">
-                <label for="senha2" class="bmd-label-floating">Confirmar senha</label>
-                <input type="password" class="form-control" id="senha2" placeholder="Confirmar senha">
-                <div role="button" class="btn absolute">
-                  <i class="material-icons absolute">visibility</i>
-                  <span class="sr-only">Visualizar</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col col-12 mt-5">
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Li e concordo com os <a href="#">Termos e
-                    Condições</a>
-                  e a <a href="#">Política de Privacidade</a></label>
-              </div>
             </div>
 
             <div class="col col-12 mt-5">
