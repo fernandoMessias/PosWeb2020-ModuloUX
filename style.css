@@ -84,3 +84,13 @@ body {
   text-align: center;
   align-self: center;
 }
+
+.box-time-parent {
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 0.5em;
+}
+
+.box-time-parent:hover {
+  background-color: rgba(242, 231, 254, 1);
+}
