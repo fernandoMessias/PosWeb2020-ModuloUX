@@ -17,31 +17,40 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
     <div class="container">
-      <div>
-        <a class="navbar-brand" href="#">
-          <img src="image.svg" alt="além do covid" style="width: 7.5em;" />
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
+      <a class="navbar-brand" href="#">
+        <img src="image.svg" alt="além do covid" style="width: 7.5em;" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarText">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <a class="nav-link" href="#">Atendimento</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Comunidade</a>
+            <a class="nav-link" href="comunidade.html">Comunidade</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Sobre nós</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Acessibilidade</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Acessibilidade
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-item" href="#">
+                <button class="btn bmd-btn-fab bg-white" aria-label="Diminuir fonte" onclick="minusFont()">-</button>
+                <span aria-hidden="true" class="mr-2 ml-2">A<small>A</small></span>
+                <button class="btn bmd-btn-fab bg-white" aria-label="Aumentar fonte" onclick="plusFont()">+</button>
+              </div>
+              <a class="dropdown-item" href="#">Libras</a>
+            </div>
           </li>
-          <li>
+          <li class="nav-item">
             <button class="btn btn-primary d-flex align-items-center">
               <i class="material-icons mr-2">account_circle
               </i>
@@ -241,6 +250,7 @@
     integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
     crossorigin="anonymous"></script>
   <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
+  <script src="utils.js"></script>
 </body>
 
 </html>
