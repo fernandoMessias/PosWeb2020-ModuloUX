@@ -31,10 +31,11 @@ main {
 
 body {
   height: 100vh;
+  background-color: #fff;
 }
 
 .breadcrumb {
-  background-color: #fafafa;
+  background-color: #ffff;
 }
 
 .text-primary {
@@ -49,4 +50,8 @@ body {
 
 .bmd-btn-fab.custom-file-control::before, .bmd-btn-icon.custom-file-control::before, .btn.bmd-btn-fab, .btn.bmd-btn-icon {
 	font-size: 1rem;
+}
+
+.form-check-label {
+  font-size: 0.9em;
 }

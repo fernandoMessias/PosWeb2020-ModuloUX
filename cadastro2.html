@@ -68,16 +68,16 @@
       <div class="col col-12 mt-5">
         <h1>Crie sua conta</h1>
         <ol class="d-flex ml-0 pl-3 pb-3 mt-5 mb-4 border-bottom">
-          <li class="mr-5">Cadastro</li>
+          <li class="mr-5 text-muted">Cadastro</li>
           <li class="mr-5 font-weight-bold text-primary">Atendimento</li>
-          <li class="mr-5">Interesses</li>
+          <li class="mr-5 text-muted">Interesses</li>
         </ol>
         <form>
           <div class="row">
             <div class="col col-12">
               <form>
                 <fieldset>
-                  <legend class="col-form-label mb-3">Em que tipos de atendimento você tem interesse?</legend>
+                  <legend class="col-form-label mb-5">Em que tipos de atendimento você tem interesse?</legend>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" name="atendimentoOptions" id="psi" value="psi">
                     <label class="form-check-label" for="psi">Psicológico</label>
@@ -105,7 +105,7 @@
             </div>
 
             <div class="col col-12 mt-5">
-              <button type="submit" class="btn btn-primary active">Próximo</button>
+              <button type="submit" id="cadastro2" class="btn btn-primary active">Próximo</button>
             </div>
 
           </div>
@@ -134,6 +134,19 @@
   <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
     integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
     crossorigin="anonymous"></script>
+  <script>
+
+    $(document).ready(function () {
+      $('body').bootstrapMaterialDesign();
+      $("#cadastro2").click(function (e) {
+        e.preventDefault();
+        console.log("teste")
+        window.location = "cadastro3.html";
+      });
+
+    });
+
+  </script>
   <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
   <script src="utils.js"></script>
 </body>
