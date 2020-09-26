@@ -43,9 +43,11 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <div class="dropdown-item" href="#">
-                <button class="btn bmd-btn-fab bg-white" aria-label="Diminuir fonte" onclick="minusFont()">-</button>
+                <button class="btn bmd-btn-fab bg-white" aria-label="Diminuir fonte"
+                  onclick="minusFont()">-</button>
                 <span aria-hidden="true" class="mr-2 ml-2">A<small>A</small></span>
-                <button class="btn bmd-btn-fab bg-white" aria-label="Aumentar fonte" onclick="plusFont()">+</button>
+                <button class="btn bmd-btn-fab bg-white" aria-label="Aumentar fonte"
+                  onclick="plusFont()">+</button>
               </div>
               <a class="dropdown-item" href="#">Libras</a>
             </div>
@@ -179,6 +181,23 @@
     crossorigin="anonymous"></script>
   <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
   <script src="utils.js"></script>
+  <script>
+    $(function () {
+
+      $('.dropdown-toggle').on('click', function (event) {
+        $('.dropdown-menu').slideToggle();
+        event.stopPropagation();
+      });
+
+      $('.dropdown-menu').on('click', function (event) {
+        event.stopPropagation();
+      });
+
+      $(window).on('click', function () {
+        $('.dropdown-menu').slideUp();
+      });
+    });
+  </script>
 </body>
 
 </html>
