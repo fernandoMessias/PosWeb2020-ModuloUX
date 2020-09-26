@@ -31,7 +31,7 @@
             <a class="nav-link" href="#">Atendimento</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Comunidade</a>
+            <a class="nav-link" href="comunidade.html">Comunidade</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Sobre nós</a>
@@ -42,7 +42,11 @@
               Acessibilidade
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">[fonte]</a>
+              <div class="dropdown-item" href="#">
+                <button class="btn bmd-btn-fab bg-white" aria-label="Diminuir fonte" onclick="minusFont()">-</button>
+                <span aria-hidden="true" class="mr-2 ml-2">A<small>A</small></span>
+                <button class="btn bmd-btn-fab bg-white" aria-label="Aumentar fonte" onclick="plusFont()">+</button>
+              </div>
               <a class="dropdown-item" href="#">Libras</a>
             </div>
           </li>
@@ -131,6 +135,7 @@
     integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
     crossorigin="anonymous"></script>
   <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
+  <script src="utils.js"></script>
 </body>
 
 </html>
