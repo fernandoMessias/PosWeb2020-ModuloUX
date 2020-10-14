@@ -124,3 +124,24 @@ a:focus, button:focus {
 .is-focused [class*=" bmd-label"], .is-focused [class^="bmd-label"] {
 	color: #6202EE;
 }
+
+.gj-picker-md table tr td.selected.gj-cursor-pointer div {
+  color: #fff;
+  background: #6202EE !important;
+  border-radius: 50%;
+}
+
+.gj-picker-md table tr td.today div {
+  color: #6202EE;
+}
+
+.gj-picker-md table tr td.gj-cursor-pointer div:hover {
+  background: #E8DCF9 !important;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+button.selectable.selected {
+  background-color: #E8DCF9 !important;
+  color: #7C1EFB;
+}
