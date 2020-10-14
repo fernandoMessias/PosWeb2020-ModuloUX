@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="d-flex flex-column justify-content-between">
   <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
     <div class="container">
       <a class="navbar-brand" href="index.html">
@@ -82,10 +82,14 @@
         </p>
 
         <div class="mt-4">
-          <button class="btn text-capitalize badge badge-pill bg-light text-black mr-2 selectable" data-tipo-atendimento="Psicóloga">Psicológico</button>
-          <button class="btn text-capitalize badge badge-pill bg-light text-black mr-2 selectable" data-tipo-atendimento="Fisioterapeuta">Fisioterápico</button>
-          <button class="btn text-capitalize badge badge-pill bg-light text-black mr-2 selectable" data-tipo-atendimento="Clínico Geral">Clínico Geral</button>
-          <button class="btn text-capitalize badge badge-pill bg-light text-black mr-2 selectable" data-tipo-atendimento="Outros">Outros</button>
+          <button class="btn text-capitalize badge badge-pill bg-light text-black mr-2 selectable"
+            data-tipo-atendimento="Psicóloga">Psicológico</button>
+          <button class="btn text-capitalize badge badge-pill bg-light text-black mr-2 selectable"
+            data-tipo-atendimento="Fisioterapeuta">Fisioterápico</button>
+          <button class="btn text-capitalize badge badge-pill bg-light text-black mr-2 selectable"
+            data-tipo-atendimento="Clínico Geral">Clínico Geral</button>
+          <button class="btn text-capitalize badge badge-pill bg-light text-black mr-2 selectable"
+            data-tipo-atendimento="Outros">Outros</button>
         </div>
       </div>
     </div>
@@ -99,7 +103,7 @@
               <label for="datepicker" class="bmd-label-floating">Data desejada</label>
               <input id="datepicker" width="276" placeholder="Informe a data para consulta" />
             </div>
-            
+
           </div>
         </div>
         <div id="voluntarios" class="col col-12 col-md-4 mt-3 d-none">
@@ -141,11 +145,12 @@
             </div>
           </fieldset>
         </div>
-        
+
 
         <div id="horarios" class="col col-12 col-md-4 mt-3 d-none">
           <h3 class="text-center mb-4">Horários disponíveis</h3>
-          <a href="#" class="d-flex justify-content-around mt-2 box-time-parent horario-agendamento" data-horario="7:00">
+          <a href="#" class="d-flex justify-content-around mt-2 box-time-parent horario-agendamento"
+            data-horario="7:00">
             <div class="box-time">
               <span class="text-muted">7:00</span>
             </div>
@@ -154,7 +159,8 @@
               <span class="text-muted">7:30</span>
             </div>
           </a>
-          <a href="#" class="d-flex justify-content-around mt-2 box-time-parent horario-agendamento" data-horario="9:00">
+          <a href="#" class="d-flex justify-content-around mt-2 box-time-parent horario-agendamento"
+            data-horario="9:00">
             <div class="box-time">
               <span class="text-muted">9:00</span>
             </div>
@@ -163,7 +169,8 @@
               <span class="text-muted">9:30</span>
             </div>
           </a>
-          <a href="" class="d-flex justify-content-around mt-2 box-time-parent horario-agendamento" data-horario="16:30">
+          <a href="" class="d-flex justify-content-around mt-2 box-time-parent horario-agendamento"
+            data-horario="16:30">
             <div class="box-time">
               <span class="text-muted">16:30</span>
             </div>
@@ -239,9 +246,9 @@
       });
     });
     $('#datepicker').datepicker({
-            showOtherMonths: true,
-            format: 'dd/mm/yyyy'
-        });
+      showOtherMonths: true,
+      format: 'dd/mm/yyyy'
+    });
   </script>
 </body>
 
