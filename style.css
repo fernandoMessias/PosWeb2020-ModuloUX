@@ -80,7 +80,7 @@ footer {
 
 .box-time{
   border-radius: 0.5em;
-  border: 1px solid rgba(78, 73, 87, 1) ;
+  border: 2px solid #6c757d ;
   width: 5em;
   text-align: center;
   align-self: center;
@@ -144,4 +144,24 @@ a:focus, button:focus {
 button.selectable.selected {
   background-color: #E8DCF9 !important;
   color: #7C1EFB;
+}
+
+.horario-agendamento {
+  text-decoration: none !important;
+  font-weight: bold;
+  color: #6c757d;
+}
+
+.horario-agendamento.selected {
+  background-color: #ba96ed;
+  color: white;
+}
+
+.horario-agendamento.selected > .box-time {
+  border: 2px solid rgba(255, 255, 255, 1);
+}
+
+#horarios > a.selected > div > span,
+#horarios > a.selected > p {
+  color: white !important;
 }

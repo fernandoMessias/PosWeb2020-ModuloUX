@@ -21,10 +21,16 @@ let voluntarios = [
         especialidade: "Psicóloga"
     }
 ];
+let agendamento = {
+    data: '',
+    voluntario: {},
+    horario: ''
+}
 
 $('.selectable').click(function(e){
+    clearHorarios();
     let $el = $(e.target);
-    let $horario = $('#datepicker');
+    let $data = $('#datepicker');
     let tipoAtendimento = $el.data('tipo-atendimento');
     let hasTipoAtendimento = listTipoAtendimento.filter((tipo)=>tipo==tipoAtendimento).length == 1;
 
@@ -37,22 +43,42 @@ $('.selectable').click(function(e){
         listTipoAtendimento.push(tipoAtendimento);
     }
 
-    if($horario.val() != '') {
+    if($data.val() != '') {
         showVoluntarios();
+        $('#horarios').addClass('d-none');
     }
 });
 
 $('#datepicker').on('change', function(e){
-    let $el = $(e.target);
-    if($el.val() == '') {
-        $('#voluntarios').addClass('d-none');
+    clearHorarios();
+    let $data = $(e.target);
+    $('#horarios').addClass('d-none');
+    if($data.val() == '') {
+        $('#voluntarios').addClass('d-none');        
     }
     else {
+        agendamento.data = moment($data.val(), "DD-MM-YYYY");
         showVoluntarios();
+        agendamento.data.locale('pt-br');
+        agendamento.data.format('LL');
     }
 });
 
+$('.horario-agendamento').click(function(e){
+    e.preventDefault();
+
+    clearHorarios();
+    let $el = $(e.currentTarget);
+    
+    $el.addClass('selected');
+    agendamento.horario = $el.data('horario');
+
+    resumeAgendamento();
+
+});
+
 function showVoluntarios() {
+    let legend = `<legend class="sr-only">Escolha o profissional</legend>`;
     $('#voluntarios').removeClass('d-none');
     $('input[name="voluntario"]').off('change');
     $('#voluntarios > fieldset').empty();
@@ -66,6 +92,7 @@ function showVoluntarios() {
         return hasTipoAtendimento;
     });
 
+    $('#voluntarios > fieldset').append($(legend));
     voluntariosDesejados.map((voluntario)=>addVoluntario(voluntario));
     $('input[name="voluntario"]').on('change', selectVoluntario);
 }
@@ -74,7 +101,7 @@ function addVoluntario(voluntario) {
     let template = `<div class="input-group border-bottom mb-3">
                         <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <input id="voluntario-${voluntario.id}" type="radio" name="voluntario" value="${voluntario.nome}">
+                            <input id="voluntario-${voluntario.id}" type="radio" name="voluntario" value="${voluntario.id}">
                         </div>
                         </div>
                         <label for="voluntario-${voluntario.id}" class="ml-2 mb-2">
@@ -87,7 +114,38 @@ function addVoluntario(voluntario) {
 }
 
 function selectVoluntario(e) {
+    clearHorarios();
     let $el = $(e.target);
     $('#horarios').removeClass('d-none');
-    console.log(e.target);
+    agendamento.voluntario = voluntarios.filter((voluntario)=>voluntario.id == $el.val())[0];
+}
+
+function resumeAgendamento() {
+    let $resumo = $('#resumo-atendimento');
+    $resumo.empty();
+
+    if(agendamento.horario == '') return;
+
+    $('#resume-box').removeClass('d-none');
+    agendamento.data.locale('pt-br');
+    let template = `<div class="col-12 col-md-6 mb-1">
+                        ${agendamento.voluntario.nome} <span class="badge badge-pill badge-primary ml-2"> ${agendamento.voluntario.especialidade}</span>
+                    </div>
+                    <div class="col-12 col-md-6 text-md-right">
+                        <small>${agendamento.data.format('LL')} ${agendamento.horario}</small>
+                    </div>`;
+    $resumo.append($(template));
+}
+
+function clearHorarios(){
+    let $listHorarios = $('.horario-agendamento');
+
+    $listHorarios.each(function(){
+        $(this).removeClass('selected');
+    });
+
+    agendamento.horario = '';
+    $('#resume-box').addClass('d-none');
+
+    resumeAgendamento();
 }
