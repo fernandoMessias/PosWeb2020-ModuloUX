@@ -21,11 +21,14 @@ let voluntarios = [
         especialidade: "Psicóloga"
     }
 ];
+
 let agendamento = {
     data: '',
     voluntario: {},
     horario: ''
 }
+
+let selectedNumber = 0;
 
 $('.selectable').click(function(e){
     clearHorarios();
@@ -35,6 +38,20 @@ $('.selectable').click(function(e){
     let hasTipoAtendimento = listTipoAtendimento.filter((tipo)=>tipo==tipoAtendimento).length == 1;
 
     $el.toggleClass('selected');
+
+    if ($el.hasClass('selected')) {
+        selectedNumber++;
+    } else {
+        selectedNumber--;
+    }
+
+    if (selectedNumber > 0) {
+        $('#calendario').removeClass('d-none');
+        $('#voluntarios').removeClass('text-white');
+    } else {
+        $('#calendario').addClass('d-none');
+        $('#voluntarios').addClass('text-white');
+    }
     
     if(hasTipoAtendimento) {
         listTipoAtendimento = listTipoAtendimento.filter((tipo)=>tipo!=tipoAtendimento)

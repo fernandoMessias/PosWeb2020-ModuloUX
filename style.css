@@ -110,6 +110,13 @@ h3 {
 
 input::placeholder {
   text-indent: -1000000px;
+  opacity: 0;
+
+}
+
+.gj-textbox-md {
+  padding-bottom: 0.35em;
+  padding-top: 0.5em;
 }
 
 a:focus, button:focus {
