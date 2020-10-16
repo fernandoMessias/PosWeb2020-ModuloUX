@@ -71,7 +71,7 @@
           <li class="mr-5 text-muted">Atendimento</li>
           <li class="mr-5 text-muted">Interesses</li>
         </ol>
-        <form>
+        <form id="cad1">
           <div class="row">
             <div class="col col-12 col-md-6">
               <div class="form-group">
@@ -113,7 +113,7 @@
 
             <div class="col col-12 mt-5">
               <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                 <label class="form-check-label" for="exampleCheck1">Li e concordo com os <a href="#">Termos e
                     Condições</a>
                   e a <a href="#">Política de Privacidade</a></label>
@@ -156,7 +156,6 @@
       $('body').bootstrapMaterialDesign();
       $("#cadastro1").click(function (e) {
         e.preventDefault();
-        console.log("teste")
         window.location = "cadastro2.html";
       });
 

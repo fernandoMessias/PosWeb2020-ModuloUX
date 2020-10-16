@@ -65,52 +65,10 @@
 
     <div class="row px-3">
       <div class="col col-12 mt-5">
-        <h1>Crie sua conta</h1>
-        <ol class="d-sm-flex ml-0 pl-3 pb-3 mt-5 mb-4 border-bottom">
-          <li class="mr-5 text-muted">Cadastro</li>
-          <li class="mr-5 font-weight-bold text-primary">Atendimento</li>
-          <li class="mr-5 text-muted">Interesses</li>
-        </ol>
-        <form>
-          <div class="row">
-            <div class="col col-12">
-              <form>
-                <fieldset>
-                  <legend class="col-form-label mb-5">Em que tipos de atendimento você tem interesse?</legend>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="atendimentoOptions" id="psi" value="psi">
-                    <label class="form-check-label" for="psi">Psicológico</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="atendimentoOptions" id="fis" value="fis">
-                    <label class="form-check-label" for="fis">Fisioterápico</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="atendimentoOptions" id="cli" value="cli">
-                    <label class="form-check-label" for="cli">Clínico geral </label>
-                  </div>
-                  <br />
-                  <div class="form-check form-check-inline mt-2">
-                    <input class="form-check-input" type="checkbox" name="atendimentoOptions" id="outro" value="outro">
-                    <label class="form-check-label" for="outro">Outro: </label>
-                    <div class="form-group form-check-inline ml-3">
-                      <label for="atend" class="bmd-label-floating">Especifique aqui</label>
-                      <input type="text" class="form-control" id="atend" placeholder="Especifique aqui">
-                    </div>
-                  </div>
-                </fieldset>
-              </form>
-
-            </div>
-
-            <div class="col col-12 mt-5">
-              <button id="voltar1" class="btn btn-primary">Voltar</button>
-              <button type="submit" id="cadastro2" class="btn btn-primary active">Próximo</button>
-            </div>
-
-          </div>
-
-        </form>
+        <h1 class="mb-5">Cadastro concluído</h1>
+        <p class="mb-5">Obrigado por se cadastrar conosco!
+          <br />Enviaremos um link de confirmação para o seu e-mail.</p>
+        <a href="atendimento.html" class="btn btn-primary active">Ir para atendimento</a>
 
       </div>
 
@@ -138,14 +96,11 @@
 
     $(document).ready(function () {
       $('body').bootstrapMaterialDesign();
-      $("#cadastro2").click(function (e) {
+      $("#cadastro1").click(function (e) {
         e.preventDefault();
-        window.location = "cadastro3.html";
+        window.location = "cadastro2.html";
       });
-      $("#voltar1").click(function (e) {
-        e.preventDefault();
-        window.location = "cadastro1.html";
-      });
+
     });
 
   </script>
